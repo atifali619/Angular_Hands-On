@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <button class="btn btn-success">New Recipe</button>
+            <hr>
+            <div class="card recipe-card" *ngFor="let recipe of recipes">
+                <div class="card-body">
+                  <div class="row">
+                      <div class="col-8">
+                          <h3>{{recipe.name}}</h3>
+                          <h5>{{recipe.description}}</h5>
+                      </div>
+                      <div class="col-4">
+                          <img src="{{recipe.imagePath}}" class="img-fluid float-end" style="height: 90px;">
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<app-recipe-item></app-recipe-item>
