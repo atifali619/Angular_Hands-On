@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'One';
+
+  feature:string = 'recipes';
+  selectedPage(selectedPage:string){
+    this.feature = selectedPage;
+  }
 }
