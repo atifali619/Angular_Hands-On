@@ -5,20 +5,26 @@
         <div class="row">
           <div class="col-8">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" class="form-control" />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              #nameInput
+            />
           </div>
           <div class="col-4">
             <label for="amount">Amount</label>
-            <input type="text" class="form-control" />
+            <input type="text" class="form-control" #amountInput />
           </div>
         </div>
       </form>
       <div class="row">
-          <div class="col-12">
-              <button class="btn btn-success">Submit</button>
-              <button class="btn btn-danger">Delete</button>
-              <button class="btn btn-primary">Clear</button>
-          </div>
+        <div class="col-12 pt-3">
+          <button class="btn btn-success" (click)="onAddItem()">Submit</button>
+          <button class="btn btn-danger">Delete</button>
+          <button class="btn btn-primary">Clear</button>
+        </div>
       </div>
     </div>
   </div>
